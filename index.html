@@ -1,0 +1,106 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>President Database</title>
+        <script src="dbAJAX.js"></script>
+        <style>
+            table {
+                border: 2px;
+                border-color: black;
+            }
+            td, th {
+                width: 50px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <h1>U.S. Presidents Biographical Database</h1>
+        <h2>Add page</h2>
+        <div>
+	<table>
+		<caption>
+                    Database Options:
+                <caption>
+                <tr>
+                    <th><a href = "index.html"> Add to Database</a></th>
+                    <th><a href = "connect.html">Make Connections</a></th>
+                    <th><a href = "select.html">See Selections</a></th>
+                </tr>
+        </table>
+        <table id="tableContainer"></table>
+        </div>
+        <div>
+            <form> 
+		<fieldset>
+                    <legend>Add President</legend>
+			<p>Name: <input type="text" id="presName" name="presName" /></p>
+
+			<p>Age when first elected: <input type="text" id="presAge" name="presAge" /></p>
+
+			<p>Number of terms: <input type="text" id="presTerm" name="presTerm" /></p>
+
+			<p>Year took office: <input type="text" id="presYear" name="presYear" /></p>
+                        <button type="button" id="submitPres" name="submitPres">Submit</button>
+                        <p id = "presP"></p>
+                </fieldset>
+	</form>
+        <form> 
+		<fieldset>
+                    <legend>Add Vice President</legend>
+			<p>Name: <input type="text" id="vicepresName" name="vicepresName" /></p>
+
+			<p>Age when took office: <input type="text" id="vicepresAge" name="vicepresAge" /></p>
+
+                        <button type="button" id="submitvicePres" name="submitvicePres">Submit</button>
+                        <p id = "vicepresP"></p>
+                </fieldset>
+	</form>
+        <form> 
+		<fieldset>
+                    <legend>Add Party</legend>
+			<select name="Name" id="partySelect">
+                            <option value="Republican">Republican</option>
+                            <option value="Democratic">Democrat</option>
+                            <option value="Unaffliated">Unaffliated</option>
+                            <option value="Federalist">Federalist</option>
+                            <option value="Democratic-Republican">Democratic-Republican</option>
+                            <option value="Whig">Whig</option>
+                            <option value="Independent">Independent</option>
+                          </select>
+
+                        <p><input type="submit" id="submitParty" name="submitParty" /></p>
+                        <p id = "partyP"></p>
+                </fieldset>
+	</form>        
+         <form> 
+		<fieldset>
+                    <legend>Add Profession</legend>
+			<p>Profession Name: <input type="text" id="profName" name="profName" /></p>
+
+                        <p><input type="submit" id="submitProf" name="submitProf" /></p>
+                        <p id = "profP"></p>
+                </fieldset>
+	</form>
+         <form> 
+		<fieldset>
+                    <legend>Add Birth State/City</legend>
+			<p>State Name: <input type="text" id="stateName" name="stateName" /></p>
+                        
+                        <p>City Name: <input type="text" id="cityName" name="cityName" /></p>
+
+                        <p><input type="submit" id="submitState" name="submitState" /></p>
+                         <p id = "stateP"></p>
+                </fieldset>
+	</form>  
+        
+        </div>
+        
+        
+        
+    </body>
+
+    
+

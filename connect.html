@@ -1,0 +1,106 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>President Database</title>
+        <script src="connectAJAX.js"></script>
+        <style>
+            table {
+                border: 2px;
+                border-color: black;
+            }
+            td, th {
+                width: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>U.S. Presidents Biographical Database</h1>
+        <h2>Connections page</h2>
+	<table>
+		<caption>
+                    Database Options:
+                <caption>
+                <tr>
+                    <th><a href = "index.html"> Add to Database</a></th>
+                    <th><a href = "connect.html">Make Connections</a></th>
+                    <th><a href = "select.html">See Selections</a></th>
+                </tr>
+        </table>
+        <table id="tableContainer"></table>
+        </div>
+        <div>
+            <form> 
+		<fieldset>
+                    <legend>Add President - Vice President Connection</legend>
+			<p>President Name: <input type="text" id="pName" name="presName" /></p>
+
+			<p>Vice President Name: <input type="text" id="vName" name="vicepresName" /></p>
+
+                        <button type="button" id="submitPres_Vice" name="submitPres">Submit</button>
+                        <p id = "presviceP"></p>
+                </fieldset>
+	</form>
+             <form> 
+		<fieldset>
+                    <legend>Add President - Party Connection</legend>
+			<p>President Name: <input type="text" id="PresPartyName" name="presName" /></p>
+
+                        <select name="Name" id="PartyPresSelect">
+                            <option value="Republican">Republican</option>
+                            <option value="Democratic">Democrat</option>
+                            <option value="Unaffliated">Unaffliated</option>
+                            <option value="Federalist">Federalist</option>
+                            <option value="Democratic-Republican">Democratic-Republican</option>
+                            <option value="Whig">Whig</option>
+                            <option value="Independent">Independent</option>
+                          </select>
+
+                        <button type="button" id="submitPres_Party" name="submitPres">Submit</button>
+                        <p id = "prespartyP"></p>
+                </fieldset>
+	</form>
+            <form> 
+		<fieldset>
+                    <legend>Add President - Profession Connection</legend>
+			<p>President Name: <input type="text" id="PresProfName" name="PresProfName" /></p>
+
+                        <p>Profession Name: <input type="text" id="ProfPresName" name="ProfPresName" /></p>
+
+                        <button type="button" id="submitPres_Prof" name="submitPres">Submit</button>
+                        <p id = "presprofP"></p>
+                </fieldset>
+	</form>
+            <form> 
+		<fieldset>
+                    <legend>Add President - Birth State Connection</legend>
+			<p>President Name: <input type="text" id="PresStateName" name="PresStateName" /></p>
+
+                        <p>State Name: <input type="text" id="StatePresName" name="StatePresName" /></p>
+                        
+                        <p>City Name: <input type="text" id="CityPresName" name="CityPresName" /></p>
+
+                        <button type="button" id="submitPres_State" name="submitPres">Submit</button>
+                        <p id = "presstateP"></p>
+                </fieldset>
+	</form>
+            <form> 
+		<fieldset>
+                    <legend>Add Vice President - Birth State Connection</legend>
+			<p>Vice President Name: <input type="text" id="VicePresStateName" name="VicePresStateName" /></p>
+
+                        <p>State Name: <input type="text" id="StateVicePresName" name="StateVicePresName" /></p>
+                        
+                        <p>City Name: <input type="text" id="CityVicePresName" name="CityVicePresName" /></p>
+
+                        <button type="button" id="submitVicePres_State" name="submitPres">Submit</button>
+                        <p id = "vicepresstateP"></p>
+                </fieldset>
+	</form>
+            
+        </div>
+        
+        
+    </body>
+</html>    
